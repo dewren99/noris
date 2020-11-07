@@ -1,0 +1,122 @@
+.z2{
+    z-index: 2;
+}
+
+.company-page{
+    padding-top: 294px;
+    padding-bottom: 219px;
+    position: relative;
+}
+
+.msg-box-1{
+    max-width: 614px;
+    margin-bottom: 51px;
+}
+
+.msg-box-1 .title,
+.card .title{
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.business_area-box .title{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.title{
+    font-family: Noto Sans;
+    font-style: normal;
+    color: #0B132A;
+}
+
+.title-bold{
+    font-family: Noto Sans KR;
+    font-style: normal;
+    color: #0B132A;
+}
+
+.business_area-box .title-bold{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+
+.msg-box-1 .title-bold,
+.card .title-bold{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.see_more-button{
+    background: #FEFEFE;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: #B8B8B8;
+
+    width: 250px;
+    height: 60px;
+}
+
+.business_area-box{
+    min-height: 265px;
+
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    padding: 0 124px 0 91px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.business_area-text{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #E5E5E5;
+}
+
+.human-head-bg{
+    position: absolute;
+    top: 950px;
+    left: -188px;
+    width: 1629px;
+    height: 760px;
+    z-index: -1;
+}
+
+.engine-service-button{
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px rgba(105, 175, 164, 0.3);
+    border-radius: 10px;
+    width: 354px;
+    height: 86px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #67D3C1;
+}

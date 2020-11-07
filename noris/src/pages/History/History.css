@@ -1,0 +1,28 @@
+.history-page-bg{
+    width: 100vw;
+    background-color: #E5E5E5;
+}
+
+.history-page{
+    background: #E5E5E5;
+    padding: 216px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.timeline-line{
+    height: 1px;
+    width: 40vw;
+    background-color: rgba(138, 138, 138, 0.4);
+    position: relative;
+    left: -110px;
+    top: -30px;
+}
+
+.history-page .MuiTimelineConnector-root{
+    width: 1px;
+}
+
+.history-page .MuiTimelineDot-root{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

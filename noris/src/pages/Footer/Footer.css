@@ -1,0 +1,40 @@
+.footer-bg{
+    width: 100vw;
+    background-color: #0B132A;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer{
+    background: #0B132A;
+    padding: 0px;
+    min-height: 320px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-left{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.copyright{
+    height: 110px;
+    background: #0B132A;
+    padding-top: 30px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.204545px;
+
+    color: #EFEFEF;
+
+    mix-blend-mode: normal;
+}
