@@ -6,17 +6,19 @@ import History from './pages/History/History.js';
 import Team from './pages/Team/Team';
 import Location from './pages/Location/Location';
 import Footer from './pages/Footer/Footer';
+import DataVisualization from './pages/DataVisualization/DataVisualization.js';
 
 export default function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/>
       <CompanyPage/>
       <EducationalExperience/>
       <History/>
       <Team/>
       <Location/>
-      <Footer/>
+      <Footer/> */}
+      <DataVisualization/>
     </div>
   );
 }
