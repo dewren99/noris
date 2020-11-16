@@ -22,7 +22,7 @@ export default function PieChart({style}) {
   const [data, setData] = useState(DATA);
 
   return (
-    <Paper style={{...style, margin:10}}>
+    <Paper style={{...style, margin:10, padding:20}}>
       <Chart data={data}>
         <PieSeries valueField="area" argumentField="country"/>
         <Title text="Area of Countries"/>

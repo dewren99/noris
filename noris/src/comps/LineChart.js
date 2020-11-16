@@ -29,7 +29,7 @@ export default function LineChart({style}){
     const [data, setData] = useState(DATA);
 
     return (
-        <Paper style={{...style}}>
+        <Paper style={{...style, padding:20}}>
             <Chart data={data}>
                 <ArgumentAxis tickFormat={format} />
                 <ValueAxis max={50}/>
