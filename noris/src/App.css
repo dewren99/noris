@@ -24,11 +24,11 @@ button{
 }
 
 .wrapper{
-  max-width: 1920px;
+  max-width: 1512px;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: column;
-  padding: 0px 10.25vw 0px 10.25vw;
+  padding: 0px 50px 0px 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -37,3 +37,12 @@ button{
   width: 100%;
 }
 
+.max-width{
+  max-width: 1512px;
+}
+
+@media screen and (max-width: 900px){
+  .wrapper{
+    padding: 0px 20px 0px 20px;
+  }
+}

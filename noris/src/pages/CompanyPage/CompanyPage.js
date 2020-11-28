@@ -8,6 +8,13 @@ import fistbumpImg from '../../imgs/fistbump.png';
 import humanHeadImg from '../../imgs/human-head.png';
 import workingWomenRobot from '../../imgs/working-women-robot.png';
 import computerVisionImg from '../../imgs/computer-vision.png';
+import noris_engine_1 from '../../imgs/noris_engine_1.png';
+import noris_engine_2 from '../../imgs/noris_engine_2.png';
+import noris_engine_3 from '../../imgs/noris_engine_3.png';
+import noris_engine_4 from '../../imgs/noris_engine_4.png';
+import arrow from '../../imgs/arrow.png';
+import arrow_bold from '../../imgs/arrow_bold.png';
+import { Grid } from '@material-ui/core';
 
 
 
@@ -32,8 +39,8 @@ const SeeMoreButton = ({style}) => {
 
 const BusinessAreaItem = ({title, text, img}) => {
     return (
-        <div style={{display:'flex', alignItems:'center'}}>
-            <img style={{width:26.53, height:23.87, marginRight:50, padding:20, boxSizing:'content-box'}} src={img} alt={title}/>
+        <div className='business-area-item' style={{display:'flex', alignItems:'center'}}>
+            <img style={{width:26.53, height:23.87, marginRight:30, padding:20, boxSizing:'content-box'}} src={img} alt={title}/>
             <div>
                 <p className="title-bold">{title}</p>
                 <p className="title" style={{maxWidth:260}}>{text}</p>
@@ -46,15 +53,18 @@ const BusinessAreaBox = () => {
     return(
         <div className="business_area-box z2" style={{width:'100%'}}>
             <p className="business_area-text">NoriS Business Area</p>
-            <BusinessAreaItem title={'NoriS Engine'} text={'사무자동화 솔루션 R&D'} img={serverImg}/>
-            <BusinessAreaItem title={'NoriS Edu'} text={'AI 기술 체험 콘텐츠 및 데이터 분석 솔루션 개발'} img={bookImg}/>
+            <Grid container wrap='nowrap' style={{width:'auto'}}>
+                <BusinessAreaItem title={'NoriS Engine'} text={'사무자동화 솔루션 R&D'} img={serverImg}/>
+                <div style={{width:'10%'}}/>
+                <BusinessAreaItem title={'NoriS Edu'} text={'AI 기술 체험 콘텐츠 및 데이터 분석 솔루션 개발'} img={bookImg}/>
+            </Grid>
         </div>
     );
 }
 
 const SecondIntroMsgBox = ({style}) => {
     return(
-        <div className='msg-box-1' style={{...style}}>
+        <div className='msg-box-2' style={{...style}}>
             <p className="title-bold">인공지능과 함께하는</p>
             <p className="title">즐거움을 공유합니다</p>
             <p>사람을 서포트하는 기술 ‘인공지능’노리스페이스(NoriS)는</p>
@@ -89,8 +99,8 @@ const VisionAndVerificationCard = ({img, title, text, children, style}) => {
 export default function CompanyPage() {
     return (
         <div className="company-page wrapper">
-            <Circle style={{  width: 1260, height: 1260, left: 924, top: -375 }}/>
-            <div style={{marginLeft: 119}}>
+            <Circle style={{  width: 1260, height: 1260, left: '60%', top: '-10%' }}/>
+            <div className='greeting-msg-wrapper' style={{marginLeft: 119}}>
                 <FirstIntroMsgBox/>
                 <SeeMoreButton style={{marginBottom:123}}/>
             </div>
@@ -100,13 +110,12 @@ export default function CompanyPage() {
             <Circle style={{height:302, width:302, top:1121, right:226, opacity: 0.5, filter:'blur(20px)'}}/>
             <img className="human-head-bg" src={humanHeadImg} alt=""/>
             <Circle style={{height:791, width:791, top:1570, left:-172, filter:'blur(100px)'}}/>
-            <Card style={{marginTop:275, minHeight:878, display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-evenly', flexWrap:'wrap'}}>
+            <Card className="content-second-wrapper" style={{marginTop:275, minHeight:878, display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-evenly', flexWrap:'wrap-reverse'}}>
                 <div>
-                    <p className="title">무엇이 어려운가요?</p>
-                    <p className="title-bold">노리스페이스(NoriS)가</p>
-                    <p className="title-bold">도와줄게요!</p>
+                    <p className="title" style={{textAlign:'center'}}>무엇이 어려운가요?</p>
+                    <p className="title-bold" style={{textAlign:'center', marginBottom:15}}> NoriS가 도와줄게요!</p>
 
-                    <p>
+                    <p className='more-text'>
                         인공지능이 도와줄 수 있는 것들이 점점 많아지고 있어요.<br/>
                         노리스페이스(NoriS)는 우리의 일상에서 일어나는 크고작은 불편함들을 <br/>
                         AI 기술을 통해 해소합니다.<br/>
@@ -117,21 +126,21 @@ export default function CompanyPage() {
             </Card>
             <Circle style={{width: 165, height:165, opacity:0.5, filter:'blur(25px)',left: 141, top: 2986}}/>
             <Circle style={{width: 441, height:441, opacity:0.5, left: 1395, top: 3151}}/>
-            <Card style={{marginTop:74, padding:'164px 0 112px 0', minHeight:1890, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'flex-start', flexWrap:'wrap'}}>
-                <div style={{display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center', marginBottom:115}}>
+            <Card className="content-third-wrapper" style={{marginTop:74, padding:'164px 0 112px 0', minHeight:1890, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'flex-start', flexWrap:'wrap'}}>
+                <div className="content-third-header-wrapper" style={{display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center', marginBottom:115}}>
                     <p><span className="title-bold" style={{color:'#777777'}}>{`Innovate work `}</span><span className="title" style={{color:'#777777'}}>Culture!</span></p>
-                    <p>귀찮은 단순반복업무 줄여주는똑똑한 솔루션, NoriS Engine</p>
+                    <p className='more-text'>귀찮은 단순반복업무 줄여주는똑똑한 솔루션, NoriS Engine</p>
                 </div>
                 <img src={workingWomenRobot} alt="" style={{width:'75%', marginBottom:52}}/>
-                <div style={{width:'65%', display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center', marginBottom:200}}>
-                    <p className="title-bold" style={{fontSize:'20px', lineHeight:'30px'}}>NoriS Engine, 일터를 놀이터 처럼!</p>
-                    <p>
+                <div  className="font-10 p-wrapper-1"  style={{width:'70%', display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center', marginBottom:200}}>
+                    <p className="title-bold font-10" style={{fontSize:'20px', lineHeight:'30px'}}>NoriS Engine, 일터를 놀이터 처럼!</p>
+                    <p className="font-10" style={{textAlign:'center'}}>
                         인공지능과 컴퓨터비전을 활용한 사무업무자동화 솔루션으로 문서 분류, 이미지 분석, 문서화 등과 같은 반복적인 업무를
                         인공지능, 
                         컴퓨터비전 기술을 활용하여 자동화하는 Backoffice AI Solution을 개발합니다.
                     </p>
                 </div>
-                <div style={{marginBottom:52, width:'65%', display:'flex', flexDirection:'row', flexWrap:'wrap', justifyContent:'space-evenly'}}>
+                {/* <div style={{marginBottom:52, width:'65%', display:'flex', flexDirection:'row', flexWrap:'wrap', justifyContent:'space-evenly'}}>
                     <VisionAndVerificationCard img={computerVisionImg} title={'Computer Vision'} style={{marginRight:7, marginBottom:40}}>
                         <span>
                             문서를 인식할 수 있도록 특화된 NoriS Engine을 <br/>
@@ -145,7 +154,39 @@ export default function CompanyPage() {
                             높여주는 역할을 합니다. <br/>
                         </span>
                     </VisionAndVerificationCard>
-                </div>
+                </div> */}
+                <Grid container direction='column' alignItems='center'>
+                    <p className='title grey'>이젠, 비정형 데이터까지 분석하는</p>
+                    <p className='title-bold grey'>NoriS Engine에게 맡기세요!</p>
+                    <p className='more-text' style={{marginTop:15}}>노리스엔진은 특허받은 AI데이터 검증기술을 통해 더 정확한 데이터 분석을 자랑합니다.</p>
+                    <Grid className='noris_engine_image-wrapper' container direction='row' justify='space-evenly' style={{width:'80%', position:'relative'}}>
+                        <Grid container style={{position:'relative', width:'auto'}}>
+                            <img className='noris_engine_image' src={noris_engine_1} alt=""/>
+                            <Grid className='arrow-block'>
+                                <img className='arrow' src={arrow} alt=""/>
+                                <img className='arrow' src={arrow_bold} alt=""/>
+                            </Grid>
+                        </Grid>
+
+                        <Grid container style={{position:'relative', width:'auto'}}>
+                            <img className='noris_engine_image' src={noris_engine_2} alt=""/>
+                            <Grid className='arrow-block'>
+                                <img className='arrow' src={arrow} alt=""/>
+                                <img className='arrow' src={arrow_bold} alt=""/>
+                            </Grid>
+                        </Grid>
+
+                        <Grid container style={{position:'relative', width:'auto'}}>
+                            <img className='noris_engine_image' src={noris_engine_3} alt=""/>
+                            <Grid className='arrow-block'>
+                                <img className='arrow' src={arrow} alt=""/>
+                                <img className='arrow' src={arrow_bold} alt=""/>
+                            </Grid>
+                        </Grid>
+                        
+                        <img className='noris_engine_image' src={noris_engine_4} alt=""/>
+                    </Grid>
+                </Grid>
                 <EngineServiceAccessButton/>
             </Card>
         </div>

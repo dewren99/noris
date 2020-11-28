@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.msg-box-1{
+.msg-box-1, .msg-box-2{
     max-width: 614px;
     margin-bottom: 51px;
 }
@@ -46,6 +46,7 @@
 
 
 .msg-box-1 .title-bold,
+.msg-box-2 .title-bold,
 .card .title-bold{
     font-weight: 700;
     font-size: 50px;
@@ -77,7 +78,7 @@
     box-sizing: border-box;
     border-radius: 10px;
 
-    padding: 0 124px 0 91px;
+    padding: 0 91px 0 91px;
 
     display: flex;
     flex-direction: row;
@@ -119,4 +120,124 @@
     text-align: center;
 
     color: #67D3C1;
+}
+
+.grey{
+    color: #777777;
+}
+
+img.noris_engine_image{
+    width: 16vw;
+}
+
+.arrow-block{
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.noris_engine_image-wrapper{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+}
+
+@media screen and (max-width: 900px){
+    .see_more-button{
+        margin-bottom: 50px !important;
+    }
+    .business-area-item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+    .business-area-item img{
+        margin: 0 !important;
+    }
+    .business-area-item p{
+        font-size: 16px !important;
+    }
+    .greeting-msg-wrapper{
+        margin-left: 0 !important;
+    }
+    .msg-box-1{
+        align-self: flex-start !important;
+    }
+    .msg-box-1, .card .title-bold, .business_area-text{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23.5px;
+    }
+    .msg-box-2{
+        margin-top: 60px !important;
+    }
+    .msg-box-2 .title, .content-second-wrapper p{
+        font-size: 16px !important;
+        line-height: 23.5px !important;
+    }
+    .msg-box-2 .title-bold{
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 23.5px;
+    }
+    .business_area-box{
+        padding: 12px 5px 20px 5px;
+    }
+    .content-second-wrapper{
+        min-height: 450px !important;
+        width: 100vw !important;
+        position: relative !important;
+        right: 20px !important;
+        border-radius: 0px !important;
+        background: #fff !important;
+    }
+    .content-second-wrapper img{
+        width: 60% !important;
+        height: unset !important;
+    }
+    .content-third-wrapper{
+        border-radius: 0px !important;
+        background: #fff !important;
+        margin-top: 30px !important;
+        padding: 30px 20px 40px 20px !important;
+        flex-wrap: nowrap !important;
+    }
+    .content-third-wrapper .noris_engine_image, 
+    .content-third-wrapper div:not(.arrow-block), 
+    .content-third-wrapper .engine-service-button{
+        width: 100% !important;
+    }
+
+    .content-third-wrapper .title,
+    .content-third-wrapper .title-bold{
+        font-size: 16px !important;
+        line-height: 23.5px !important;
+    }
+    .content-third-header-wrapper{
+        margin-bottom: 30px !important;
+    }
+    .content-second-wrapper .more-text,
+    .content-third-wrapper .more-text,
+    .font-10 .title,
+    .font-10 .title-bold,
+    .font-10 p,
+    .font-10{
+        font-size: 10px !important;
+        line-height: 15px !important;
+    }
+    .p-wrapper-1{
+        margin-bottom: 60px !important;
+    }
+    .arrow-block{
+        top: unset;
+        bottom: -20px;
+        right: 50%;
+        transform: translateX(50%)  rotate(90deg);
+    }
+    .noris_engine_image{
+        margin-bottom: 20px;
+    }
 }

@@ -7,5 +7,20 @@
     padding-top: 176px;
     padding-bottom: 136px;
     position: relative;
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), linear-gradient(220.74deg, #FFF9C8 16.13%, rgba(255, 255, 255, 0) 76.86%), linear-gradient(342.17deg, #ABC3FF 13.88%, rgba(255, 255, 255, 0) 88.89%), #A8E5DB; */
+}
+
+@media screen and (max-width: 900px){
+    .content-wrapper-fourth{
+        padding: 60px 20px 60px 20px !important;
+        text-align: center !important;
+    }
+    .content-wrapper-fourth div, 
+    .content-wrapper-fourth img,
+    .content-wrapper-fourth p{
+        width: 100% !important;
+    }
+    .content-wrapper-fourth .header{
+        font-size: 16px !important;
+        line-height: 23.5px !important;
+    }
 }

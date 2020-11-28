@@ -27,3 +27,51 @@
 
     cursor: pointer;
 }
+
+@media(max-width: 1025px){
+    .map-wrapper{
+      flex-wrap: wrap;
+    }
+    .map-1{
+        margin-right: 0px !important;
+        margin-bottom: 50px;
+    }
+    .map-1, .map-2{
+        min-width: 100%;
+        align-self: center;
+    }
+    .location-page {
+        padding-top: 178px;
+        padding-bottom: 80px;
+        background: #1A233D;
+    }
+}
+
+@media(max-width: 700px){
+    .location-page-bg .header{
+        font-size: 22px !important;
+        line-height: 25px !important;
+    }
+    .newline{
+        display: block;
+    }
+    .wrapper.location-page{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+    .map-1, .map-2{
+        max-height: 300px !important;
+    }
+    #map-button{
+        height: 51px;
+        width: 51px;
+        bottom: -25px !important;
+    }
+    #map-button img{
+        height: 21px !important;
+        width: 21px !important;
+    }
+    #map-button span{
+        display: none !important;
+    }
+}

@@ -2,3 +2,23 @@
     background: #fff;
     padding: 162px 0px 156px 0px;
 }
+
+@media(max-width: 1025px){
+    .team-members{
+        max-width: 40vw;
+        align-self: center;
+    }
+}
+
+@media(max-width: 700px){
+    .member-card{
+        font-size: 12px !important;
+    }
+    .team-page .header{
+        font-size: 22px !important;
+        line-height: 25px !important;
+    }
+    .newline{
+        display: block;
+    }
+}

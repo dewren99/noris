@@ -11,7 +11,7 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 
 const TimelineCard = ({children}) => {
     return (
-        <div style={{width:'36vw', fontFamily: "Noto Sans", fontStyle: "normal", fontWeight: 300, fontSize: "24px", lineHeight: "30px", color: "#65C7B6", marginLeft:38}}>
+        <div className='timeline-card' style={{width:'36vw', fontFamily: "Noto Sans", fontStyle: "normal", fontWeight: 300, fontSize: "24px", lineHeight: "30px", color: "#65C7B6", marginLeft:38}}>
             {children}
         </div>
     );
@@ -19,7 +19,7 @@ const TimelineCard = ({children}) => {
 
 const TimelineCardItem = ({children, style}) => {
     return (
-        <div style={{marginBottom:48, ...style}}>
+        <div className='timeline-card-item' style={{marginBottom:48, ...style}}>
             {children}
         </div>
     );
@@ -29,7 +29,7 @@ const TimelineCardItem = ({children, style}) => {
 
 const CompanyTimeline = () => {
     return(
-        <Timeline>
+        <Timeline className='company-timeline-tree'>
             <TimelineItem>
                 <TimelineSeparator>
                 <TimelineDot />
@@ -37,7 +37,7 @@ const CompanyTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <TimelineCard>
-                        <p style={{marginBottom:53, position: 'relative', bottom: 5}}>2020</p>
+                        <p className='timeline-year' style={{marginBottom:53, position: 'relative', bottom: 5}}>2020</p>
                         <TimelineCardItem>
                             <p style={{fontSize: "20px", fontWeight: "bold", color: "#323232" }}>핏펫(FitPet) MOU 체결 </p>
                             <p style={{fontSize: "20px", color: "#323232" }}>Coumtimized NoriS Engine 개발</p>
@@ -70,7 +70,7 @@ const CompanyTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <TimelineCard>
-                        <p style={{marginBottom:53, position: 'relative', bottom: 5}}>2019</p>
+                        <p className='timeline-year' style={{marginBottom:53, position: 'relative', bottom: 5}}>2019</p>
                         <TimelineCardItem>
                             <p style={{fontSize: "20px", fontWeight: "bold", color: "#323232" }}>신한 디지털라이프스쿨 수상</p>
                             <p style={{fontSize: "20px", color: "#323232" }}>신한 두드림스페이스 디지털라이프스쿨 최우수상 수상</p>

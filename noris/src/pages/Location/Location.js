@@ -6,12 +6,12 @@ export default function Location() {
     return (
         <div className="location-page-bg">
             <div className="wrapper location-page">
-                <p style={{ fontFamily: "Noto Sans KR", fontStyle: "normal", fontWeight: 100, fontSize: "50px", lineHeight: "70px", textAlign: "center", color: "#FFFFFF", marginBottom:120}}>
+                <p className='header' style={{ fontFamily: "Noto Sans KR", fontStyle: "normal", fontWeight: 100, fontSize: "50px", lineHeight: "70px", textAlign: "center", color: "#FFFFFF", marginBottom:120}}>
                     <span style={{fontWeight:700}}>노리스페이스</span>
-                    <span>로 놀러오세요!</span>
+                    <span className='newline'>로 놀러오세요!</span>
                 </p>
-                <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'space-evenly', color:'#fff'}}>
-                    <div style={{display:'flex', flexDirection:'column', width:'70%', marginRight:27, }}>
+                <div className="map-wrapper" style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'space-evenly', color:'#fff'}}>
+                    <div className="map-1" style={{display:'flex', flexDirection:'column', width:'70%', marginRight:27, }}>
                         <div style={{ border: "1px solid #FFFFFF", borderRadius: "20px", width:'100%', height: 428, display:'flex', justifyContent:'center', alignItems:'center', position:'relative', marginBottom:42}}>
                             <p style={{color:'#fff'}}>MAP #1</p>
                             <div id="map-button">
@@ -23,7 +23,7 @@ export default function Location() {
                         <p>서울특별시 성동구 왕십리로 63 언더스탠드에비뉴 8-2 NoriS</p>
                     </div>
 
-                    <div style={{display:'flex', flexDirection:'column', width:'30%'}}>
+                    <div className="map-2" style={{display:'flex', flexDirection:'column', width:'30%'}}>
                         <div style={{ border: "1px solid #FFFFFF", borderRadius: "20px", width:'100%', height: 428,  display:'flex', justifyContent:'center', alignItems:'center', marginBottom:42}}>
                             <p style={{color:'#fff'}}>MAP #2</p>
                         </div>

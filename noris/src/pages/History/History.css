@@ -26,3 +26,20 @@
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+@media screen and (max-width: 900px){
+    .company-timeline-tree{
+        align-self: flex-start;
+    }
+    .timeline-card{
+        margin-left: 5px !important;
+    }
+    .timeline-year, .timeline-card-item p{
+        font-size: 10px !important;
+        line-height: 15px !important;
+        width: 65vw;
+    }
+    .timeline-year{
+        margin-bottom: 10px !important;
+    }
+}

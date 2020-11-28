@@ -18,8 +18,8 @@ export default function Footer() {
                     </p>
                 </div>
 
-                <div style={{width:'50%', display:'flex', justifyContent:'space-evenly', alignItems:'center'}}>
-                    <div  style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'space-evenly', alignItems:'flex-start'}}>
+                <div className="footer-right" style={{width:'50%', display:'flex', justifyContent:'space-evenly', alignItems:'center'}}>
+                    <div className="footer-right-inner"  style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'space-evenly', alignItems:'flex-start'}}>
                         <div style={{ fontFamily: "DM Sans", fontStyle: "normal", fontWeight: "normal", fontSize: "17px", lineHeight: "22px", letterSpacing: "-0.231818px", color: "#B3CBFD", display:'flex', flexDirection:'column',}}>
                             <p style={{marginBottom:20}}>Navigation</p>
                             <a href="" style={{color:'#fff', marginBottom:20}}>NoriS Eungine</a>
@@ -32,7 +32,7 @@ export default function Footer() {
                             <a  href="" style={{color:'#fff'}}>오시는길</a>
                         </div>
 
-                        <div style={{ fontFamily: "DM Sans", fontStyle: "normal", fontWeight: "normal", fontSize: "17px", lineHeight: "22px", letterSpacing: "-0.231818px", color: "#B3CBFD", display:'flex', flexDirection:'column'}}>
+                        <div className='follow-us' style={{ fontFamily: "DM Sans", fontStyle: "normal", fontWeight: "normal", fontSize: "17px", lineHeight: "22px", letterSpacing: "-0.231818px", color: "#B3CBFD", display:'flex', flexDirection:'column'}}>
                             <p  style={{marginBottom:20}}>Follow Us</p>
                             <div style={{display:'flex', justifyContent:'flex-start', flexDirection:'row'}}>
                                 <img style={{marginRight:20, cursor:'pointer'}} src={facebook} alt="facebook"/>

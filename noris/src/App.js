@@ -11,13 +11,13 @@ import DataVisualization from './pages/DataVisualization/DataVisualization.js';
 export default function App() {
   return (
     <div className="App">
-      {/* <Navbar/>
+      <Navbar/>
       <CompanyPage/>
       <EducationalExperience/>
       <History/>
       <Team/>
       <Location/>
-      <Footer/> */}
+      <Footer/>
       <DataVisualization/>
     </div>
   );
